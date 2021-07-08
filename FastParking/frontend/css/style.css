@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/*header.css*/
+
+#header{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between; 
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 100px;
+    margin: 2.5rem auto;
+}
+
+/*modal*/
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -8;
+    opacity: 0;
+    user-select: none;
+    transition: all .3s;
+}
+
+.modal-content {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin: 20vh auto;
+    background-color:white;
+    border-radius: 0px;
+    border: solid 0px #000000;
+}
+
+.modal-footer {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto 30px;
+    border-radius: 0 0 5px 5px;
+    padding: 0 20px;
+    background-color: inherit;
+    
+}
+.active {
+    z-index: 50000;
+    opacity: 1;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 0px solid #000000;
+    border-radius: 0px 0px 0 0;
+    background-color: inherit;
+}
+
+.modal-header > h1 {
+    margin: 0 auto;
+    color: 	#000000;
+    font-weight: normal;
+    text-shadow: 0px 0px 1px #000000;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px auto;
+}
+.close-button:hover {
+    background-color: #ff4949;
+    cursor: pointer;
+    color: white;
+    border-radius: 0 5px 0 0;
+}
+
+.close-button {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 40px;
+    color: lightslategray;
+}
+
+.form div{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*main, com os botões incluso*/
+.button{
+    border-style: none;
+    padding: 0 20px;
+    min-height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: black;
+    border-radius: 20px;
+}
+
+.button.blue {
+    background-color: #f1c566;
+    border: solid 1px	#f1c566;
+    border-radius: 2px;
+}
+
+.button.blue:hover{
+    background-color: #fff;
+    border: solid 1px #1fb6ff;
+    color: #1fb6ff;
+    border-radius: 2px;
+}
+
+.button.red {
+    background-color: #FF0000;
+    border: solid 1px #FF0000;
+    border-radius: 2px;
+
+}
+
+.button.red:hover{
+    background-color: #fff;
+    border: solid 1px #ff4949;
+    color: #ff4949;
+    border-radius: 2px;
+}
+
+.button.green {
+    background-color: #56ff40;
+    border: solid 1px #56ff40;
+    border-radius: 2px;
+}
+
+.button.green:hover{
+    background-color: #fff;
+    border: solid 1px #13CE66;
+    color: #13CE66;
+    border-radius: 2px;
+}
+.button.yellow {
+    background-color: #FFD700;
+    border: solid 1px #FFD700;
+    border-radius: 2px;
+}
+
+.button.yellow:hover{
+    background-color: #fff;
+    border: solid 1px #d3c500;
+    color: #d7db03;
+    border-radius: 2px;
+}
+.container-receipt{
+    width: calc(40px + 40vw);
+    display: flex;
+    flex-direction: column;
+    border: solid 3px  #000000;
+    margin: 50px auto;
+}
+
+#tableCars {
+    width: 1000px;
+    text-align: center;
+    user-select: none;
+    border-collapse: collapse;
+    border: solid 3px #000000;
+    margin: 0 auto;
+}
+
+#tableCars thead th{
+    background-color: #E6E6FA;
+}
+
+#tableCars thead th,
+#tableCars tbody td{
+    border: solid 1px #000000;
+    padding: 15px;
+}
+
+#tableCars thead th:last-child,
+#tableCars tbody td:last-child{
+    max-width: 400px;
+    text-align: center;
+}
+
+.container-receipt header{
+    padding: 10px;
+    
+}
+
+.container-receipt h1{
+    border-bottom: solid 1.5px #000000(63, 63, 63, 0.849) ;
+}
+
+
+#containerSlogan{
+    width: 100%;
+    height: 100px;
+     background-image: url(../img/estacionamento1.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     padding-top: 200px;
+ }
+
+ /* input */
+ .input-form:focus {
+    border: px solid #000000;
+}
+
+.input-form{
+    width: calc(40px + 10vw);
+    height: 30px;
+    padding: 0 3px;
+    font-size: 15px;
+    border-radius: 0px;
+    outline-style: none;
+    border: 2px solid #000000;
+}
+
+.input-readonly{
+    border-style: none;
+    border-bottom: solid 2px #000000;
+}
+
+.input-readonly:focus{
+    outline-style: none;
+}
